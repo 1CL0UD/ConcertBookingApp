@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.TicketsPageController"
+      prefWidth="360" prefHeight="640"
+      alignment="CENTER"
+      spacing="10"
+      style="-fx-padding: 20;">
+
+    <Label fx:id="concertLabel" text="Concert Name">
+        <font>
+            <Font name="System Bold" size="18" />
+        </font>
+    </Label>
+
+
+    
+
+    <!-- Concert Details Card -->
+    <VBox alignment="CENTER">
+        <!-- Concert Image -->
+        <StackPane prefWidth="200" prefHeight="200">
+            <ImageView fx:id="concertImageView" fitWidth="200" fitHeight="200" preserveRatio="true" />
+        </StackPane>
+        <VBox fx:id="concertDetailsVBox" alignment="CENTER" spacing="5"/>
+    </VBox>
+
+    <!-- Available Tickets Section -->
+    <VBox alignment="CENTER">
+        <Label text="Available Tickets" style="-fx-font-weight: bold"/>
+
+        <!-- List of Tickets as Cards -->
+        <VBox fx:id="ticketsVBox" alignment="CENTER" spacing="5"/>
+    </VBox>
+
+</VBox>
