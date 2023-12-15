@@ -12,7 +12,7 @@
       prefWidth="360" prefHeight="640"
       alignment="CENTER"
       spacing="10"
-      style="-fx-padding: 20;">
+      style="-fx-padding: 20; -fx-background-color: #f0f0f0;">
 
     <Label text="Email"/>
     <TextField fx:id="emailField"/>
@@ -20,5 +20,5 @@
     <Label text="Password"/>
     <PasswordField fx:id="passwordField"/>
 
-    <Button text="Login" onAction="#login"/>
+    <Button text="Login" onAction="#login" style="-fx-background-color: #4CAF50; -fx-text-fill: white;"/> <!-- Setting button color -->
 </VBox>

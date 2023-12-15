@@ -45,7 +45,7 @@ public class HomepageController {
         for (Concert concert : concerts) {
             // Create a VBox for each concert card
             VBox concertCard = new VBox();
-            concertCard.setStyle("-fx-padding: 10px; -fx-border-color: black; -fx-border-radius: 5px; -fx-background-color: #f0f0f0;");
+            concertCard.setStyle("-fx-padding: 10px; -fx-border-radius: 5px; -fx-background-color: #f0f0f0; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);");
 
             concertCard.setSpacing(5); // Adjust spacing as needed
 
@@ -73,6 +73,7 @@ public class HomepageController {
             Label dateLabel = new Label("Date: " + formattedDate);
 
             Button buyButton = new Button("Buy");
+            buyButton.setStyle("-fx-background-color: #E49B0F; -fx-text-fill: #f0f0f0;");
             buyButton.setOnAction((ActionEvent event) -> {
                 // Logic to handle buying tickets for the selected concert
                 buyTickets(concert, customerId); // Pass the selected concert to the method

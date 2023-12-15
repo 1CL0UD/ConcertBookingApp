@@ -10,7 +10,7 @@
       prefWidth="360" prefHeight="640"
       alignment="CENTER"
       spacing="10"
-      style="-fx-padding: 20;">
+      style="-fx-padding: 20; -fx-background-color: #f0f0f0;">
 
     <!-- Customer Details Card -->
     <VBox fx:id="customerDetailsCard" style="-fx-padding: 10; -fx-border-color: black;">
@@ -26,10 +26,10 @@
         <Label text="Available Payment Methods" style="-fx-font-weight: bold;"/>
         
         <!-- Cash payment button -->
-        <Button text="Cash" onAction="#handleCashPayment" style="-fx-background-color: lightgreen;"/>
+        <Button text="Cash" onAction="#handleCashPayment" style="-fx-background-color: #E49B0F; -fx-text-fill: #f0f0f0;"/>
 
         <!-- Credit payment button -->
-        <Button text="Credit" onAction="#handleCreditPayment" style="-fx-background-color: lightblue;"/>
+        <Button text="Credit" onAction="#handleCreditPayment" style="-fx-background-color: #228B22; -fx-text-fill: #f0f0f0;"/>
     </VBox>
 
 </VBox>

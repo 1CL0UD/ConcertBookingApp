@@ -85,7 +85,7 @@ public class TicketsPageController {
 
     private VBox createTicketCard(Ticket ticket, int customerId) {
         VBox ticketCard = new VBox();
-        ticketCard.setStyle("-fx-padding: 10px; -fx-border-color: black; -fx-border-radius: 5px; -fx-background-color: #f0f0f0;");
+        ticketCard.setStyle("-fx-padding: 10px; -fx-border-radius: 5px; -fx-background-color: #f0f0f0; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);");
 
         Label typeLabel = new Label("Type: " + ticket.getType());
         Label priceLabel = new Label("Price: Rp " + ticket.getPrice());
@@ -97,6 +97,8 @@ public class TicketsPageController {
 
         // Button to proceed to payment
         Button buyButton = new Button("Buy");
+        buyButton.setStyle("-fx-background-color: #E49B0F; -fx-text-fill: #f0f0f0;");
+
 
         HBox buyField = new HBox(10); // Spacing between elements
         buyField.getChildren().addAll(quantityField, buyButton);
